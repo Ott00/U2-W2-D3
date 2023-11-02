@@ -1,0 +1,9 @@
+.btn-1 {
+  @include button($btn-blue);
+}
+.btn-2 {
+  @include button($btn-orange);
+}
+.btn-3 {
+  @include button($btn-green);
+}

@@ -1,0 +1,16 @@
+$multiplierValue: 1rem;
+
+@for $i from 1 through 5 {
+  .padding-block-#{$i} {
+    padding-block: $i * $multiplierValue;
+  }
+  .padding-inline-#{$i} {
+    padding-inline: $i * $multiplierValue;
+  }
+  .margin-block-#{$i} {
+    margin-block: $i * $multiplierValue;
+  }
+  .margin-inline-#{$i} {
+    margin-inline: $i * $multiplierValue;
+  }
+}
