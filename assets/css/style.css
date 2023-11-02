@@ -161,6 +161,16 @@
   cursor: pointer;
 }
 
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 nav {
   display: flex;
   align-items: center;
@@ -178,6 +188,7 @@ main {
   background-color: #ffffff;
 }
 main .headline {
+  animation: fadeIn 1s 0s ease forwards;
   background-color: rgb(220, 220, 220);
   border-radius: 10px;
 }
@@ -189,6 +200,8 @@ main .headline .btn-section {
   text-align: right;
 }
 main .hero {
+  animation: fadeIn 1s 0s ease forwards;
+  animation: fadeIn 1s ease forwards;
   display: flex;
   background-color: rgb(220, 220, 220);
   border-radius: 10px;

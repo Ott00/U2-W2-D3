@@ -26,6 +26,7 @@ nav {
 main {
   background-color: $body-color;
   .headline {
+    @include animationFadeIn(1s, 0s, ease forwards);
     background-color: $bg-color;
     border-radius: 10px;
     h1 {
@@ -36,6 +37,8 @@ main {
     }
   }
   .hero {
+    @include animationFadeIn(1s, 0s, ease forwards);
+    animation: fadeIn 1s ease forwards;
     display: flex;
     background-color: $bg-color;
     border-radius: 10px;
