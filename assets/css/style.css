@@ -171,16 +171,21 @@
     opacity: 1;
   }
 }
+body {
+  background-color: #202020;
+}
+
 nav {
   display: flex;
   align-items: center;
-  background-color: rgb(220, 220, 220);
+  color: #f4f4f4;
+  background-color: #640fc5;
 }
 nav .logo img {
   width: 80px;
 }
 nav .nav-element a {
-  color: black;
+  color: #f4f4f4;
   text-decoration: none;
 }
 nav .nav-element a:hover {
@@ -188,12 +193,10 @@ nav .nav-element a:hover {
   text-decoration: underline;
 }
 
-main {
-  background-color: #ffffff;
-}
 main .headline {
   animation: fadeIn 1s 0s ease forwards;
-  background-color: rgb(220, 220, 220);
+  background-color: #640fc5;
+  color: #f4f4f4;
   border-radius: 10px;
 }
 main .headline h1 {
@@ -207,7 +210,8 @@ main .hero {
   animation: fadeIn 1s 0s ease forwards;
   animation: fadeIn 1s ease forwards;
   display: flex;
-  background-color: rgb(220, 220, 220);
+  background-color: #640fc5;
+  color: #f4f4f4;
   border-radius: 10px;
 }
 main .hero .hero-img-container img {

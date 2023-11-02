@@ -6,10 +6,15 @@
 @import "./partials/button";
 @import "./partials/animation";
 
+body {
+  background-color: $body-color;
+}
+
 nav {
   display: flex;
   align-items: center;
-  background-color: $bg-color;
+  color: $text-color;
+  background-color: $bg-hero;
   .logo {
     img {
       width: 80px;
@@ -17,7 +22,7 @@ nav {
   }
   .nav-element {
     a {
-      color: black;
+      color: $text-color;
       text-decoration: none;
     }
     a:hover {
@@ -28,10 +33,10 @@ nav {
 }
 
 main {
-  background-color: $body-color;
   .headline {
     @include animationFadeIn(1s, 0s, ease forwards);
-    background-color: $bg-color;
+    background-color: $bg-hero;
+    color: $text-color;
     border-radius: 10px;
     h1 {
       @include title-big(60px, bold);
@@ -44,7 +49,8 @@ main {
     @include animationFadeIn(1s, 0s, ease forwards);
     animation: fadeIn 1s ease forwards;
     display: flex;
-    background-color: $bg-color;
+    background-color: $bg-hero;
+    color: $text-color;
     border-radius: 10px;
     .hero-img-container {
       img {
